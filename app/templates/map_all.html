@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+{# sessions #}
+{% if session['country'] %}
+    <h1>Map of {{ session['country'] }} for {{ session['activity'] }}!</h1>
+{% else %}
+    <h1>Map of unknown country! <br>
+{% endif %}
+{# end sessions #}
+
+<!--https://stackoverflow.com/questions/3206344/passing-html-to-template-using-flask-jinja2-->
+
+{{mapping|safe}}}
+
+<!--https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp-->
+
+<script>
+    first = document.getElementsByTagName("link")[7];
+    second = document.getElementsByTagName("link")[8];
+    first.remove()
+    second.remove()
+</script>
+
+{% endblock %}

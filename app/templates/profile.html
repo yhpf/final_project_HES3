@@ -1,0 +1,45 @@
+<!-- Profile page -->
+<!-- This file extends layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<div class="bg-image-profile">
+  <div class="profile-text">
+    <h1>
+      Profile
+    </h1>
+    <p>
+      Username: {{ user.username }}
+    </p>
+    <a class="btn btn-primary update-btn" href="/update" role="button">Update</a>
+    <!-- https://getbootstrap.com/docs/5.0/components/modal/ -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteModalLabel">Delete User</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Do you really want to delete your user profile?
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary cancel-btn" href="/profile" role="button">Cancel</a>
+            <!-- Button to actually delete -->
+            <a class="btn btn-primary delete-btn" href="/user/delete/{{ user.username }}" role="button">Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

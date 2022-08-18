@@ -1,0 +1,401 @@
+year,country,activity_group,quantity
+1995,Belgium,combustible_fuel,9930
+1996,Belgium,combustible_fuel,11286
+1997,Belgium,combustible_fuel,12650
+1998,Belgium,combustible_fuel,15084
+1999,Belgium,combustible_fuel,17963
+2000,Belgium,combustible_fuel,23118
+2001,Belgium,combustible_fuel,23599
+2002,Belgium,combustible_fuel,22805
+2003,Belgium,combustible_fuel,23017
+2004,Belgium,combustible_fuel,23372
+2005,Belgium,combustible_fuel,19413
+2006,Belgium,combustible_fuel,31483
+2007,Belgium,combustible_fuel,26493
+2008,Belgium,combustible_fuel,28567
+2009,Belgium,combustible_fuel,31008
+2010,Belgium,combustible_fuel,34198
+2011,Belgium,combustible_fuel,33251
+2012,Belgium,combustible_fuel,32183
+2013,Belgium,combustible_fuel,28445
+2014,Belgium,combustible_fuel,26246
+2015,Belgium,combustible_fuel,26390
+2016,Belgium,combustible_fuel,25393
+2017,Belgium,combustible_fuel,22109
+2018,Belgium,combustible_fuel,24190
+2019,Belgium,combustible_fuel,20915
+1995,Japan,combustible_fuel,10780
+1996,Japan,combustible_fuel,11187
+1997,Japan,combustible_fuel,12155
+1998,Japan,combustible_fuel,13113
+1999,Japan,combustible_fuel,14047
+2000,Japan,combustible_fuel,14928
+2001,Japan,combustible_fuel,14630
+2002,Japan,combustible_fuel,15484
+2003,Japan,combustible_fuel,14940
+2004,Japan,combustible_fuel,16314
+2005,Japan,combustible_fuel,16889
+2006,Japan,combustible_fuel,15970
+2007,Japan,combustible_fuel,16946
+2008,Japan,combustible_fuel,16051
+2009,Japan,combustible_fuel,15209
+2010,Japan,combustible_fuel,16300
+2011,Japan,combustible_fuel,15072
+2012,Japan,combustible_fuel,14775
+2013,Japan,combustible_fuel,14965
+2014,Japan,combustible_fuel,13736
+2015,Japan,combustible_fuel,13075
+2016,Japan,combustible_fuel,13869
+2017,Japan,combustible_fuel,13937
+2018,Japan,combustible_fuel,13357
+2019,Japan,combustible_fuel,13357
+1995,Russian Federation,combustible_fuel,8039804
+1996,Russian Federation,combustible_fuel,6693428
+1997,Russian Federation,combustible_fuel,6386070
+1998,Russian Federation,combustible_fuel,6333231
+1999,Russian Federation,combustible_fuel,6317845
+2000,Russian Federation,combustible_fuel,6472039
+2001,Russian Federation,combustible_fuel,6412808
+2002,Russian Federation,combustible_fuel,6281804
+2003,Russian Federation,combustible_fuel,6290441
+2004,Russian Federation,combustible_fuel,6231296
+2005,Russian Federation,combustible_fuel,5853459
+2006,Russian Federation,combustible_fuel,6035690
+2007,Russian Federation,combustible_fuel,5782857
+2008,Russian Federation,combustible_fuel,5586123
+2009,Russian Federation,combustible_fuel,5340189
+2010,Russian Federation,combustible_fuel,5673674
+2011,Russian Federation,combustible_fuel,6038583
+2012,Russian Federation,combustible_fuel,6063487
+2013,Russian Federation,combustible_fuel,5374829
+2014,Russian Federation,combustible_fuel,5187219
+2015,Russian Federation,combustible_fuel,4853378
+2016,Russian Federation,combustible_fuel,4988962
+2017,Russian Federation,combustible_fuel,4924203
+2018,Russian Federation,combustible_fuel,5064879
+2019,Russian Federation,combustible_fuel,4914229
+1995,United States,combustible_fuel,409751
+1996,United States,combustible_fuel,415000
+1997,United States,combustible_fuel,418785
+1998,United States,combustible_fuel,399473
+1999,United States,combustible_fuel,380146
+2000,United States,combustible_fuel,323778
+2001,United States,combustible_fuel,303593
+2002,United States,combustible_fuel,371014
+2003,United States,combustible_fuel,366769
+2004,United States,combustible_fuel,236103
+2005,United States,combustible_fuel,249773
+2006,United States,combustible_fuel,541758
+2007,United States,combustible_fuel,551695
+2008,United States,combustible_fuel,533668
+2009,United States,combustible_fuel,520524
+2010,United States,combustible_fuel,508287
+2011,United States,combustible_fuel,508637
+2012,United States,combustible_fuel,500799
+2013,United States,combustible_fuel,453413
+2014,United States,combustible_fuel,428607
+2015,United States,combustible_fuel,418187
+2016,United States,combustible_fuel,508000
+2017,United States,combustible_fuel,450328
+2018,United States,combustible_fuel,477322
+2019,United States,combustible_fuel,462421
+1995,Belgium,consumption,18775
+1996,Belgium,consumption,20730
+1997,Belgium,consumption,22706
+1998,Belgium,consumption,26160
+1999,Belgium,consumption,31370
+2000,Belgium,consumption,39764
+2001,Belgium,consumption,39082
+2002,Belgium,consumption,38380
+2003,Belgium,consumption,41455
+2004,Belgium,consumption,39825
+2005,Belgium,consumption,34656
+2006,Belgium,consumption,43406
+2007,Belgium,consumption,37664
+2008,Belgium,consumption,42689
+2009,Belgium,consumption,51421
+2010,Belgium,consumption,56941
+2011,Belgium,consumption,55600
+2012,Belgium,consumption,54714
+2013,Belgium,consumption,49798
+2014,Belgium,consumption,46109
+2015,Belgium,consumption,46202
+2016,Belgium,consumption,44446
+2017,Belgium,consumption,37552
+2018,Belgium,consumption,41042
+2019,Belgium,consumption,44008
+1995,Japan,consumption,31646
+1996,Japan,consumption,33724
+1997,Japan,consumption,36976
+1998,Japan,consumption,39942
+1999,Japan,consumption,42668
+2000,Japan,consumption,45296
+2001,Japan,consumption,45198
+2002,Japan,consumption,46328
+2003,Japan,consumption,45916
+2004,Japan,consumption,49804
+2005,Japan,consumption,50144
+2006,Japan,consumption,48338
+2007,Japan,consumption,50142
+2008,Japan,consumption,48060
+2009,Japan,consumption,45994
+2010,Japan,consumption,48836
+2011,Japan,consumption,43916
+2012,Japan,consumption,44942
+2013,Japan,consumption,45804
+2014,Japan,consumption,43222
+2015,Japan,consumption,42616
+2016,Japan,consumption,44448
+2017,Japan,consumption,44809
+2018,Japan,consumption,45534
+2019,Japan,consumption,45534
+1995,Russian Federation,consumption,16325000
+1996,Russian Federation,consumption,13400600
+1997,Russian Federation,consumption,12753300
+1998,Russian Federation,consumption,12594400
+1999,Russian Federation,consumption,12683687
+2000,Russian Federation,consumption,12693082
+2001,Russian Federation,consumption,12700688
+2002,Russian Federation,consumption,12168826
+2003,Russian Federation,consumption,12232475
+2004,Russian Federation,consumption,12048485
+2005,Russian Federation,consumption,10984655
+2006,Russian Federation,consumption,11203952
+2007,Russian Federation,consumption,10812141
+2008,Russian Federation,consumption,10385469
+2009,Russian Federation,consumption,9918116
+2010,Russian Federation,consumption,10507496
+2011,Russian Federation,consumption,11338043
+2012,Russian Federation,consumption,11352574
+2013,Russian Federation,consumption,9925556
+2014,Russian Federation,consumption,9962806
+2015,Russian Federation,consumption,9379744
+2016,Russian Federation,consumption,9808593
+2017,Russian Federation,consumption,9845727
+2018,Russian Federation,consumption,9728089
+2019,Russian Federation,consumption,9552493
+1995,United States,consumption,704897
+1996,United States,consumption,714232
+1997,United States,consumption,718644
+1998,United States,consumption,692293
+1999,United States,consumption,659370
+2000,United States,consumption,502798
+2001,United States,consumption,470386
+2002,United States,consumption,460922
+2003,United States,consumption,455647
+2004,United States,consumption,293317
+2005,United States,consumption,310298
+2006,United States,consumption,673033
+2007,United States,consumption,685383
+2008,United States,consumption,662984
+2009,United States,consumption,646656
+2010,United States,consumption,631774
+2011,United States,consumption,632202
+2012,United States,consumption,622153
+2013,United States,consumption,558577
+2014,United States,consumption,532470
+2015,United States,consumption,519525
+2016,United States,consumption,631103
+2017,United States,consumption,557938
+2018,United States,consumption,591844
+2019,United States,consumption,574337
+1995,Belgium,energy,9414
+1996,Belgium,energy,10400
+1997,Belgium,energy,11381
+1998,Belgium,energy,13574
+1999,Belgium,energy,16245
+2000,Belgium,energy,20592
+2001,Belgium,energy,20241
+2002,Belgium,energy,19873
+2003,Belgium,energy,21397
+2004,Belgium,energy,21754
+2005,Belgium,energy,17940
+2006,Belgium,energy,27540
+2007,Belgium,energy,25280
+2008,Belgium,energy,27045
+2009,Belgium,energy,29896
+2010,Belgium,energy,32864
+2011,Belgium,energy,32293
+2012,Belgium,energy,32068
+2013,Belgium,energy,28341
+2014,Belgium,energy,26118
+2015,Belgium,energy,26120
+2016,Belgium,energy,25064
+2017,Belgium,energy,21957
+2018,Belgium,energy,23812
+2019,Belgium,energy,20553
+1995,Japan,energy,15823
+1996,Japan,energy,16862
+1997,Japan,energy,18488
+1998,Japan,energy,19971
+1999,Japan,energy,21334
+2000,Japan,energy,22648
+2001,Japan,energy,22599
+2002,Japan,energy,23164
+2003,Japan,energy,22958
+2004,Japan,energy,24902
+2005,Japan,energy,25072
+2006,Japan,energy,24169
+2007,Japan,energy,25071
+2008,Japan,energy,24030
+2009,Japan,energy,22997
+2010,Japan,energy,24418
+2011,Japan,energy,21958
+2012,Japan,energy,22471
+2013,Japan,energy,22902
+2014,Japan,energy,21611
+2015,Japan,energy,21308
+2016,Japan,energy,22224
+2017,Japan,energy,22405
+2018,Japan,energy,22767
+2019,Japan,energy,22767
+1995,Russian Federation,energy,7880700
+1996,Russian Federation,energy,6578800
+1997,Russian Federation,energy,6252400
+1998,Russian Federation,energy,6226100
+1999,Russian Federation,energy,6229447
+2000,Russian Federation,energy,6229412
+2001,Russian Federation,energy,6226368
+2002,Russian Federation,energy,5999256
+2003,Russian Federation,energy,6079952
+2004,Russian Federation,energy,6025294
+2005,Russian Federation,energy,6025556
+2006,Russian Federation,energy,6408796
+2007,Russian Federation,energy,6045907
+2008,Russian Federation,energy,5836359
+2009,Russian Federation,energy,5503016
+2010,Russian Federation,energy,5837595
+2011,Russian Federation,energy,6306508
+2012,Russian Federation,energy,6365900
+2013,Russian Federation,energy,5106351
+2014,Russian Federation,energy,5228229
+2015,Russian Federation,energy,4940452
+2016,Russian Federation,energy,4925575
+2017,Russian Federation,energy,4941073
+2018,Russian Federation,energy,5120857
+2019,Russian Federation,energy,4940287
+1995,United States,energy,348288
+1996,United States,energy,352750
+1997,United States,energy,355967
+1998,United States,energy,339549
+1999,United States,energy,323124
+2000,United States,energy,275211
+2001,United States,energy,258267
+2002,United States,energy,252290
+2003,United States,energy,249402
+2004,United States,energy,160549
+2005,United States,energy,169845
+2006,United States,energy,368395
+2007,United States,energy,375153
+2008,United States,energy,362894
+2009,United States,energy,353956
+2010,United States,energy,345810
+2011,United States,energy,346043
+2012,United States,energy,340543
+2013,United States,energy,305744
+2014,United States,energy,291454
+2015,United States,energy,284367
+2016,United States,energy,345440
+2017,United States,energy,305393
+2018,United States,energy,323952
+2019,United States,energy,314369
+1995,Belgium,ownuse,0
+1996,Belgium,ownuse,0
+1997,Belgium,ownuse,0
+1998,Belgium,ownuse,0
+1999,Belgium,ownuse,0
+2000,Belgium,ownuse,0
+2001,Belgium,ownuse,0
+2002,Belgium,ownuse,0
+2003,Belgium,ownuse,0
+2004,Belgium,ownuse,0
+2005,Belgium,ownuse,0
+2006,Belgium,ownuse,7667
+2007,Belgium,ownuse,8171
+2008,Belgium,ownuse,7232
+2009,Belgium,ownuse,5917
+2010,Belgium,ownuse,6058
+2011,Belgium,ownuse,5858
+2012,Belgium,ownuse,5912
+2013,Belgium,ownuse,4867
+2014,Belgium,ownuse,4380
+2015,Belgium,ownuse,4539
+2016,Belgium,ownuse,4263
+2017,Belgium,ownuse,4399
+2018,Belgium,ownuse,4851
+2019,Belgium,ownuse,0
+1995,Japan,ownuse,0
+1996,Japan,ownuse,0
+1997,Japan,ownuse,1
+1998,Japan,ownuse,0
+1999,Japan,ownuse,2
+2000,Japan,ownuse,1
+2001,Japan,ownuse,0
+2002,Japan,ownuse,0
+2003,Japan,ownuse,0
+2004,Japan,ownuse,1
+2005,Japan,ownuse,361
+2006,Japan,ownuse,359
+2007,Japan,ownuse,362
+2008,Japan,ownuse,331
+2009,Japan,ownuse,413
+2010,Japan,ownuse,508
+2011,Japan,ownuse,373
+2012,Japan,ownuse,380
+2013,Japan,ownuse,-1
+2014,Japan,ownuse,1
+2015,Japan,ownuse,-1
+2016,Japan,ownuse,0
+2017,Japan,ownuse,0
+2018,Japan,ownuse,0
+2019,Japan,ownuse,0
+1995,Russian Federation,ownuse,546700
+1996,Russian Federation,ownuse,437400
+1997,Russian Federation,ownuse,423300
+1998,Russian Federation,ownuse,391400
+1999,Russian Federation,ownuse,384135
+2000,Russian Federation,ownuse,368020
+2001,Russian Federation,ownuse,368152
+2002,Russian Federation,ownuse,387134
+2003,Russian Federation,ownuse,406359
+2004,Russian Federation,ownuse,424637
+2005,Russian Federation,ownuse,398161
+2006,Russian Federation,ownuse,440826
+2007,Russian Federation,ownuse,418215
+2008,Russian Federation,ownuse,415336
+2009,Russian Federation,ownuse,423220
+2010,Russian Federation,ownuse,389827
+2011,Russian Federation,ownuse,447525
+2012,Russian Federation,ownuse,445008
+2013,Russian Federation,ownuse,383723
+2014,Russian Federation,ownuse,439479
+2015,Russian Federation,ownuse,450848
+2016,Russian Federation,ownuse,472750
+2017,Russian Federation,ownuse,477832
+2018,Russian Federation,ownuse,499934
+2019,Russian Federation,ownuse,509081
+1995,United States,ownuse,36185
+1996,United States,ownuse,35592
+1997,United States,ownuse,37316
+1998,United States,ownuse,35042
+1999,United States,ownuse,34677
+2000,United States,ownuse,54059
+2001,United States,ownuse,50534
+2002,United States,ownuse,123759
+2003,United States,ownuse,122344
+2004,United States,ownuse,78758
+2005,United States,ownuse,83317
+2006,United States,ownuse,180715
+2007,United States,ownuse,184029
+2008,United States,ownuse,178016
+2009,United States,ownuse,173632
+2010,United States,ownuse,169379
+2011,United States,ownuse,169499
+2012,United States,ownuse,167051
+2013,United States,ownuse,153770
+2014,United States,ownuse,142970
+2015,United States,ownuse,139494
+2016,United States,ownuse,169452
+2017,United States,ownuse,151029
+2018,United States,ownuse,159833
+2019,United States,ownuse,154325

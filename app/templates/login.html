@@ -1,0 +1,27 @@
+<!-- Login page -->
+<!-- This file extends layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="login-box">
+	<div class="text-white text-left login-text">
+		<h1>Login</h1>
+
+		<form class="form needs-validation" method="POST" action="/login">
+		{{ form.hidden_tag() }} 
+		{% for field in form %} {% if field.id != 'submit' and field.id != 'csrf_token' %}
+			<div class="form-group">
+			{{ field.label }}: {{ field( class="form-control" ) }}
+			{% if field.errors %} {% for error in field.errors %}<p class="form-error-message">{{ error }}</p>{% endfor %} {% endif %}
+			</div>
+			{% endif %} {% endfor %}
+
+			<div class="form-submit">
+			{{ form.submit( class="btn btn-primary btn-block login-btn" ) }}
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

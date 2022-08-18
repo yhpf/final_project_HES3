@@ -1,0 +1,410 @@
+<!-- This is the base document -->
+<!-- Includes header and footer -->
+<!doctype html>
+<html lang="en">
+  <!-- All <head> attributes in header.html -->
+  {% include 'header.html' %}
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="/image" alt="" width="20" height="24" class="d-inline-block align-text-top">
+            Feel the Heat
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              {% if user %}
+              <li class="nav-item">
+                <a class="nav-link" href="/prediction">Prediction</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  1990s
+                </a>
+                <!-- https://bootstrap-menu.com/detail-multilevel.html -->
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1990</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1990/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1990/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1990/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1990/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1991</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1991/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1991/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1991/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1991/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1992</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1992/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1992/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1992/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1992/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1993</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1993/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1993/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1993/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1993/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1994</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1994/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1994/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1994/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1994/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1995</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1995/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1995/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1995/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1995/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1996</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1996/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1996/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1996/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1996/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1997</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1997/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1997/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1997/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1997/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1998</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1998/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1998/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1998/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1998/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">1999</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/1999/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/1999/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1999/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/1999/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  2000s
+                </a>
+                <!-- https://bootstrap-menu.com/detail-multilevel.html -->
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2000</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2000/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2000/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2000/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2000/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2001</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2001/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2001/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2001/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2001/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2002</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2002/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2002/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2002/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2002/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2003</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2003/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2003/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2003/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2003/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2004</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2004/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2004/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2004/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2004/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2005</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2005/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2005/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2005/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2005/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2006</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2006/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2006/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2006/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2006/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2007</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2007/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2007/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2007/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2007/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2008</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2008/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2008/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2008/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2008/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2009</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2009/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2009/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2009/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2009/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  2010s
+                </a>
+                <!-- https://bootstrap-menu.com/detail-multilevel.html -->
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2010</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2010/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2010/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2010/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2010/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2011</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2011/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2011/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2011/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2011/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2012</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2012/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2012/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2012/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2012/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2013</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2013/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2013/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2013/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2013/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2014</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2014/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2014/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2014/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2014/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2015</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2015/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2015/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2015/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2015/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2016</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2016/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2016/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2016/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2016/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2017</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2017/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2017/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2017/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2017/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2018</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2018/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2018/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2018/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2018/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2019</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2019/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2019/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2019/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2019/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown" id="myDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">2020</a>
+                    <ul class="submenu submenu-left dropdown-menu">
+                      <li> <a class="dropdown-item" href="/map/2020/Fuel">Fuel</a></li>
+                      <li> <a class="dropdown-item" href="/map/2020/Consumption">Consumption</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2020/Energy">Energy</a> </li>
+                      <li> <a class="dropdown-item" href="/map/2020/Ownuse">Own Use</a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prediction map
+                </a>
+                <!-- https://bootstrap-menu.com/detail-multilevel.html -->
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <li> <a class="dropdown-item" href="/map/2021/Fuel">Fuel</a></li>
+                    <li> <a class="dropdown-item" href="/map/2021/Consumption">Consumption</a> </li>
+                    <li> <a class="dropdown-item" href="/map/2021/Energy">Energy</a></li>
+                    <li> <a class="dropdown-item" href="/map/2021/Ownuse">Own Use</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Log Out</a>
+              </li>    
+              {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Sign up</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <main role="main" class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %} 
+        {% if messages %} {% for category, message in messages %}
+      <div class="alert alert-{{category}}" role="alert">{{message}}</div>
+      {% endfor %} {% endif %} {% endwith %}
+        <!-- Extended in index.html -->
+        {% block content %}{% endblock %}
+      </main>
+    </div>
+    <footer>
+      <nav class="navbar sticky-bottom">
+        <div class="container-fluid footernav">
+          <p class="footertext mx-auto">Group Beta</p>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

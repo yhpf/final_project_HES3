@@ -1,0 +1,30 @@
+<!-- This is the HEAD for layout.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} - Final Group Beta</title>
+    
+    <!-- Favicon (flame) -->
+    <!-- https://elmah.io/tools/base64-image-encoder/ -->
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,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">
+
+    <!-- Google Fonts (the RUBRIK font for headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link href="{{ url_for('static', filename='./css/index.css') }}" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- External JS file -->
+    <script src="{{ url_for('static', filename='./js/index.js') }}"></script>
+
+</head>

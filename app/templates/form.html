@@ -1,0 +1,28 @@
+<!-- Heat prediction form -->
+<!-- This file extends layout.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Heat prediction form</h2>
+
+<form class="form needs-validation" method="POST" action="/predict" novalidate>
+  {{ form.hidden_tag() }}
+  {% for field in form %}
+      {% if field.id != 'submit' and field.id != 'csrf_token' %}
+          <div class="form-group col-md-6">
+              {{ field.label (class="form-label")}}:
+              {{ field (class="form-control")}}
+              {% if field.errors %}
+                  {% for error in field.errors %}
+                      <div class="flash">{{ error }}</div>
+                  {% endfor %}
+              {% endif %}
+          </div>
+      {% endif %}
+  {% endfor %}
+  {# https://getbootstrap.com/docs/5.0/components/buttons/ #}
+  <div class="form-submit col-6 d-flex align-items-end justify-content-end">
+      {{ form.submit (class="btn btn-block btn-outline-primary pred-button float-right")}}
+  </div>
+</form>
+{% endblock %}

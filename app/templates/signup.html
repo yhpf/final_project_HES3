@@ -1,0 +1,29 @@
+<!-- User signup page -->
+<!-- This file extends layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Signup{% endblock %}
+
+{% block content %}
+<div class="signup-box">
+
+	<div class="text-white text-left signup-text">
+		<h1>Signup</h1>
+		<form class="form needs-validation" method="POST" action="/user/create" novalidate> 
+		{{ form.hidden_tag() }} 
+		{% for field in form %} {% if field.id != 'submit' and field.id != 'csrf_token' %}
+		<div class="form-group">
+		{{ field.label }}: {{ field( class="form-control" ) }}
+		{% if field.errors %} {% for error in field.errors %}<p class="form-error-message">{{ error }}</p>{% endfor %} {% endif %}
+		</div>
+		{% endif %} {% endfor %}
+
+		<div class="form-submit">
+		{{ form.submit( class="btn btn-primary btn-block signup-btn" ) }}
+		</div>
+		</form>
+
+		<p>Already signed up? <a href="{{ url_for('login') }}">Log in!</a></p>
+	</div>
+</div>
+{% endblock %}

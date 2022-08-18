@@ -1,0 +1,72 @@
+<!-- Prediction page -->
+<!-- This file extends layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Heat Prediction{% endblock %}
+
+{% block content %}
+<div class="bg-image-prediction">
+    <div class="prediction-box">
+        <div class="p-3 mb-2 text-white text-center prediction-text">
+            <h1>Predict Heat</h1>
+            <!-- CREATE Country & Activity as DropDown to Connect with ML -->
+            <form action="{{ url_for('predict')}}"method="post">
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value=0>United States</option>
+
+                    {% if (country and country|int() ==1) %}
+                    <option value=1 selected>Belgium</option>
+                    {% else %}
+                    <option value=1 >Belgium</option>
+                    {% endif %}
+
+                    {% if (country and country|int() ==2) %}
+                    <option value=2 selected>Russian</option>
+                    {% else %}
+                    <option value=2 >Russian</option>
+                    {% endif %}
+
+                    {% if (country and country|int() ==3) %}
+                    <option value=3 selected>Japan</option>
+                    {% else %}
+                    <option value=3 >Japan</option>
+                    {% endif %}
+
+                </select>
+                <label for="activity">Activity:</label>
+                <select name="activity" id="activity">
+                    <option value=0>Fuel</option>
+
+                    {% if (activity and activity|int() ==1) %}
+                    <option value=1 selected>Consumption</option>
+                    {% else %}
+                    <option value=1>Consumption</option>
+                    {% endif %}
+
+                    {% if (activity and activity|int() ==2) %}
+                    <option value=2 selected>Energy</option>
+                    {% else %}
+                    <option value=2 >Energy</option>
+                    {% endif %}
+
+                    {% if (activity and activity|int() ==3) %}
+                    <option value=3 selected>Own Use</option>
+                    {% else %}
+                    <option value=3 >Own Use</option>
+                    {% endif %}
+                </select>
+                <button type="submit" class="btn btn-secondary btn-block submit-btn">Predict</button>
+                <h2>Prediction: {{ prediction }} terajoule (TJ)</h2>
+                {# sessions #}
+                {% if session['country'] %}
+                    <h4>Your most recent prediction was {{ session['activity'] }} for {{ session['country'] }}!</h4>
+                {% else %}
+                    <h4>You have no recent prediction during this session.</h4>
+                {% endif %}
+                {# end sessions #}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

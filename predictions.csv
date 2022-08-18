@@ -1,0 +1,17 @@
+Country,Activity,Quantity
+United States,Fuel,1890052
+United States,Consumption,1231782
+United States,Energy,573511
+United States,Ownuse,-84759
+Belgium,Fuel,2379987
+Belgium,Consumption,1721716
+Belgium,Energy,1063446
+Belgium,Ownuse,405176
+Russia,Fuel,2869921
+Russia,Consumption,2211651
+Russia,Energy,1553380
+Russia,Ownuse,895110
+Japan,Fuel,3359856
+Japan,Consumption,2701585
+Japan,Energy,2043315
+Japan,Ownuse,1385044

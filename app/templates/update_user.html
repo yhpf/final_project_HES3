@@ -1,0 +1,29 @@
+<!-- Usre update page -->
+<!-- This file extends layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Update user{% endblock %}
+
+{% block content %}
+<div class="update-box">
+	<div class="text-white text-left update-text">
+		<h1>Update username</h1>
+
+		<form class="form needs-validation" method="POST" action="/user/update/{{ user.username }}"> {# its wrong in action path #}
+		{{ form.hidden_tag() }} 
+		{% for field in form %} {% if field.id != 'submit' and field.id != 'csrf_token' %}
+		<div class="form-group">
+		{{ field.label }}: {{ field( class="form-control" ) }}
+		{% if field.errors %} {% for error in field.errors %}<p class="form-error-message">{{ error }}</p>{% endfor %} {% endif %}
+		</div>
+		{% endif %} {% endfor %}
+
+		<div class="form-submit">
+		{{ form.submit(class="btn btn-primary btn-block updateu-btn") }}
+		<a class="btn btn-primary cancel-btn" href="/profile" role="button">Cancel</a>
+		</div>
+		</form>
+
+	</div>
+</div>
+{% endblock %}

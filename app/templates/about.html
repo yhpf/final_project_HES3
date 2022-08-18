@@ -1,0 +1,21 @@
+<!-- About page -->
+<!-- This file extends layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="bg-image-about">
+  <div class="about-text">
+    <h1>About</h1>
+    <p>The purpose of this project is to provide the forecast of Heat Quantity at four different countries (United States, Belgium, Russian Federation, Japan) based on the heat data between 1995 - 2009. Data is downloaded from UN database (reference on Github). A regression model is implmented, trained, and deployed to a web application together with visualization.</p>
+
+    <h2>Heat Prediction Explained</h2>
+    <p>What is Heat Quantity you may ask?</p>
+    <p>Well, Heat Quantity is the heat decipated from any heat-related activities: Consumption of energy, Melting objects, Burning fossil fuel, you name it all. And, is Measured in Terajoules (10^12).</p>
+    <p>Is this concerning?</p>
+    <p>As a rising energy consumption is closely related to a rising population, we are getting nearer and nearer, to a tipping point or an energy crisis.</p>
+    <p>As demand rises indefinitely, the quantity of natural resources deminishes.</p>
+  </div>
+</div>
+{% endblock %}

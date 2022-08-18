@@ -1,0 +1,19 @@
+<!-- Index/first page -->
+<!-- This file extends layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="bg-image">
+    <div class="index-text">
+        <h1>
+            WHAT HEAT DOES THE FUTURE HOLD?
+        </h1>
+        <a class="btn btn-primary predict-btn" href="/prediction" role="button">Predict</a>
+        <a class="btn btn-primary learn-btn" href="/about" role="button">Learn more</a>
+    </div>
+</div>
+{% endblock %}
+
+

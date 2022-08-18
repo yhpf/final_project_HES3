@@ -1,0 +1,315 @@
+/* Style sheet for layout.html */
+
+/* ====== GENERAL ====== */
+body {
+  /* To make sure fixed header don't overlap main */
+  /* https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page */
+  padding-top: 3rem; 
+
+  /* To make sure footer sticks to the bottom and don't float midair */
+  /* https://stackoverflow.com/questions/25671073/footer-below-content-but-not-floating-mid-air-if-not-enough-content */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* To make sure footer sticks to the bottom and don't float midair */
+/* https://stackoverflow.com/questions/25671073/footer-below-content-but-not-floating-mid-air-if-not-enough-content */
+.content {
+   flex: 1;
+}
+
+h1, h2 {
+  font-family: "Rubik", "Arial", sans-serif;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+}
+
+.content {
+  background-color: #000000; /* black */
+}
+
+/* ====== BUTTONS ====== */
+
+.predict-btn, .learn-btn, .submit-btn, .login-btn, .signup-btn, .delete-btn, .cancel-btn, .update-btn, .updateu-btn, .cancel-btn {
+  margin: 1rem;
+  background-color: #000000; /* black */
+  color: #FFA500; /* orange */
+  border-color: #000000; /* black */
+}
+
+.predict-btn:hover, .learn-btn:hover, .submit-btn:hover, .login-btn:hover, .signup-btn:hover, .delete-btn:hover, .cancel-btn:hover, .update-btn:hover, .updateu-btn:hover, .cancel-btn:hover {
+  margin: 1rem;
+  background-color: #FFA500; /* orange */
+  color:  #000000; /* black */
+  border-color: #000000; /* black */
+}
+
+.login-btn, .login-btn:hover, .signup-btn, .signup-btn:hover, .updateu-btn, .updateu-btn:hover {
+  margin-left: 0rem;
+}
+
+/* ====== NAVIGATION ====== */
+
+nav {
+  background-color: #000000; /* black */
+  color: #FFFFFF; /* white */
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-family: "Rubik", "Arial", sans-serif;
+}
+
+/* link */
+.nav-link, .navbar-brand {
+  color: #FFFFFF; /* white */
+}
+
+/* visited */
+.nav-link:visited {
+  color: #FFFFFF; /* white */
+}
+
+.navbar-brand:visited {
+  color: #FFFFFF; /* white */
+}
+
+/* mouse over */
+.nav-link:hover {
+  color: #FFA500; /* orange */
+}
+
+.navbar-brand:hover {
+  color: #FFA500; /* orange */
+}
+
+.dropdown-menu {
+  background-color: #000000; /* black */
+  color: #FFFFFF; /* white */
+}
+
+/* link */
+a.dropdown-toggle:link {
+  color: #FFFFFF; /* white */
+}
+
+/* link */
+.dropdown-menu a:link {
+  color: #FFA500; /* orange */
+}
+
+/* visited */
+.dropdown-menu a:visited {
+  color: #FFA500; /* orange */
+}
+
+/* mouse over */
+.dropdown-menu a:hover {
+  color: #FFA500; /* orange */
+}
+
+/* active */
+.dropdown-menu a:active {
+  color: #FFFFFF; /* white */
+}
+
+.dropdown-item {
+  color: #FFFFFF; /* white */
+}
+
+/* https://bootstrap-menu.com/detail-multilevel.html */
+
+/* desktop view */
+@media all and (min-width: 992px) {
+  .dropdown-menu li { 
+    position: relative;  
+  }
+
+  .nav-item .submenu { 
+    display: none;
+    position: absolute;
+    left:100%; top: -7px;
+  }
+
+  .nav-item .submenu-left { 
+    right:100%; left: auto;
+  }
+
+  .dropdown-menu > li:hover { 
+    background-color: #f1f1f1 
+  }
+
+  .dropdown-menu > li:hover > .submenu { 
+    display: block; 
+  }
+} 
+
+/* small devices */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+      margin-left: 0.7rem; 
+      margin-right: 0.7rem; 
+      margin-bottom: 0.5rem;
+  }
+} 
+
+/* ====== INDEX ====== */
+
+/* Photo by <a href="https://unsplash.com/@wolfalexs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oleksandr Sushko</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+
+.bg-image {
+  background: url(../asset/img/dessert.jpg) top center;
+  background-color: #9A9A9A; /* grey */ /* just in case image fails to load */
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 86vh;
+  padding: 10rem 12rem; /* top/bottom right/left */
+}
+
+.index-text {
+  background-color: #FFFFFF90; /* white 10% opacity*/
+  text-align: center;
+  border: 5px solid #FFFFFF; /* white */
+  border-radius: 1rem 1rem;
+  padding: 4rem 3rem; /* top/bottom right/left */
+}
+
+/* ====== ABOUT ====== */
+
+/* Photo by <a href="https://unsplash.com/@thepeoplesdigital?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fiona Smallwood</a> on <a href="https://unsplash.com/s/photos/drought?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+
+.bg-image-about {
+  background: url(../asset/img/drought.jpg) top center;
+  background-color: #9A9A9A; /* grey */ /* just in case image fails to load */
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 86vh;
+  padding: 2rem 0rem; /* top/bottom right/left */
+}
+
+.about-text {
+  background-color: #FFFFFF90; /* white 10% opacity*/
+  text-align: left;
+  border-top: 5px solid #FFFFFF; /* white */
+  border-bottom: 5px solid #FFFFFF; /* white */
+  padding: 2rem 3rem; /* top/bottom right/left */
+}
+
+/* ====== PREDICTION ====== */
+
+/* Photo by <a href="https://unsplash.com/@magdalenakulamanchee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Magdalena Kula Manchee</a> on <a href="https://unsplash.com/s/photos/global-warming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  
+.bg-image-prediction {
+  background: url(../asset/img/glacier.jpg) top center;
+  background-color: #9A9A9A; /* grey */ /* just in case image fails to load */
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 86vh;
+  padding: 8rem 0rem; /* top/bottom right/left */
+}
+
+.prediction-box {
+  background-color: #FFFFFF90; /* white 10% opacity*/
+  text-align: left;
+  padding: 4rem 3rem; /* top/bottom right/left */
+}
+
+.prediction-text {
+  border: 5px solid #FFFFFF; /* white */
+  border-radius: 1rem 1rem;
+}
+
+.prediction-text h1, label, h2 {
+    color: #000000; /* black */
+    font-family: "Rubik", "Arial", sans-serif;
+}
+
+/* ====== LOGIN ====== */
+
+.login-box {
+  background-color: #000000; /* black */
+  text-align: left;
+  padding: 4rem 3rem; /* top/bottom right/left */
+  width: 70%;
+}
+
+.login-text {
+  background-color: #808080; /* grey */
+  border: 5px solid #FFFFFF; /* white */
+  border-radius: 1rem 1rem;
+  padding: 4rem 3rem; /* top/bottom right/left */
+}
+
+/* ====== SIGNUP ====== */
+
+.signup-box {
+  background-color: #000000; /* black */
+  text-align: left;
+  padding: 4rem 3rem; /* top/bottom right/left */
+  width: 70%;
+}
+
+.signup-text {
+  background-color: #808080; /* grey */
+  border: 5px solid #FFFFFF; /* white */
+  border-radius: 1rem 1rem;
+  padding: 4rem 3rem; /* top/bottom right/left */
+}
+
+/* ====== PROFILE ====== */
+
+/* Photo by <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wolfgang Hasselmann</a> on <a href="https://unsplash.com/s/photos/heat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+
+.bg-image-profile {
+  background: url(../asset/img/savanna.jpg) top center;
+  background-color: #9A9A9A; /* grey */ /* just in case image fails to load */
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 86vh;
+  padding: 10rem 12rem; /* top/bottom right/left */
+}
+
+.profile-text {
+  background-color: #FFFFFF90; /* white 10% opacity*/
+  text-align: center;
+  border: 5px solid #FFFFFF; /* white */
+  border-radius: 1rem 1rem;
+  padding: 4rem 3rem; /* top/bottom right/left */
+}
+
+/* ====== UPDATE ====== */
+
+.update-box {
+  background-color: #000000; /* black */
+  text-align: left;
+  padding: 4rem 3rem; /* top/bottom right/left */
+  width: 70%;
+}
+
+.update-text {
+  background-color: #808080; /* grey */
+  border: 5px solid #FFFFFF; /* white */
+  border-radius: 1rem 1rem;
+  padding: 4rem 3rem; /* top/bottom right/left */
+}
+
+/* ====== DELETE MODAL ====== */
+
+.modal-body {
+  text-align: left;
+}
+
+/* ====== FOOTER ====== */
+
+footer {
+  background-color: #000000; /* black */
+  color: #FFFFFF; /* white */
+}
+
+
+
